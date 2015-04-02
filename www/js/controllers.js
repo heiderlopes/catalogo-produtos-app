@@ -16,4 +16,7 @@ angular.module('starter.controllers', [])
       $scope.$broadcast('scroll.refreshComplete');
     })
   };
+
+  $scope.doRefresh();
+  
 });
