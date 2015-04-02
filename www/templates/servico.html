@@ -8,7 +8,15 @@
                      
       </ion-refresher>
       <ion-list>
-        <ion-item ng-repeat="servico in servicos">{{servico.nome}}</ion-item>
+        <ion-item ng-repeat="servico in servicos">
+          <div class="list">
+            <a class="item item-avatar" href="#">
+              <!--<img src="venkman.jpg">-->
+              <h2>{{servico.nome}}</h2>
+              <p>SKU: {{servico.sku}}  - Preço: {{servico.preco}}</p>
+            </a>
+          </div>
+        </ion-item>
       </ion-list>
     </ion-content>
 </ion-view>
